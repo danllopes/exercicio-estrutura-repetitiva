@@ -93,6 +93,21 @@ public class Main {
                 break;
 
             case 3:
+
+                System.out.println("Exercicio 01\n" +
+                                   "------------");
+
+                int result = 1;
+
+                System.out.print("\nNúmero INTEIRO que será fatorado: ");
+                int number = sc.nextInt();
+
+                for(int i = 1; i <= number; i++) {
+                    result *= i;
+                }
+
+                System.out.printf("\nResultado da Expressão %d!: %d", number, result);
+
                 break;
 
             case 4:
