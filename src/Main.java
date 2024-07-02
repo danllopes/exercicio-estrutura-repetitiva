@@ -94,7 +94,7 @@ public class Main {
 
             case 3:
 
-                System.out.println("Exercicio 01\n" +
+                System.out.println("Exercicio 03\n" +
                                    "------------");
 
                 int result = 1;
@@ -111,6 +111,22 @@ public class Main {
                 break;
 
             case 4:
+
+                System.out.println("Exercicio 04\n" +
+                                   "------------");
+
+                System.out.print("\nNúmero INTEIRO: ");
+                int num = sc.nextInt();
+
+                System.out.println("NÚMERO | NÚMERO^2 | NÚMERO^3\n" +
+                                   "----------------------------\n");
+
+                for(int i = 1; i <= num; i++) {
+                    int n2 = i * i;
+                    int n3 = i * n2;
+                    System.out.printf("  %d        %d        %d\n", i, n2, n3);
+                }
+
                 break;
 
             default:
