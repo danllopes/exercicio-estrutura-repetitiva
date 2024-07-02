@@ -49,6 +49,47 @@ public class Main {
                 break;
 
             case 2:
+
+                System.out.println("Exercicio 01\n" +
+                        "------------");
+                int gasoline = 0;
+                int ethanol = 0;
+                int diesel = 0;
+
+                System.out.println("OPÇÃO          COMBUSTÍVEL\n" +
+                                   "--------------------------\n" +
+                                   "  1             Gasolina\n" +
+                                   "  2             Álcool\n" +
+                                   "  3             Diesel\n" +
+                                   "--------------------------\n" +
+                                   "  Para obter o relatório\n " +
+                                   "   insira o número: 4\n" +
+                                   "--------------------------\n");
+
+                System.out.print("Opção: ");
+                int selection = sc.nextInt();
+
+                while(selection != 4) {
+
+                    if(selection == 1) {
+                        gasoline++;
+                    } else if(selection == 2) {
+                        ethanol++;
+                    } else if(selection == 3){
+                        diesel++;
+                    } else {
+                        System.out.println("\nOpção inválida!\n");
+                    }
+
+                    System.out.print("Opção: ");
+                    selection = sc.nextInt();
+                }
+
+                System.out.printf("\nMUITO OBRIGADO!\n" +
+                                   "Gasolina: %d\n" +
+                                   "Álcool: %d\n" +
+                                   "Diesel: %d", gasoline, ethanol, diesel);
+
                 break;
 
             case 3:
